@@ -19,6 +19,7 @@ namespace AbstractFactory
             warrior.Dead += (sedner, arg) => Console.WriteLine("Воин пал смертью храбрых");
             warrior.Weapon.Used += (sender, arg) => Console.WriteLine($"Использовано оружие {sender.ToString()} на {arg.Used}");
             warrior.Armor.Used += (sender, arg) => Console.WriteLine($"Использована броня {sender.ToString()} на {arg.Used}");
+            //Комментарий
             while (archer.HP > 0 && warrior.HP > 0)
             {
                 Console.WriteLine(archer);
